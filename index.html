@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utilities.css">
+    <script src="script.js" defer></script>
+    <script src="server.js" defer></script>
+</head>
+<body>
+    <!-- <script> -->
+    <!-- //     fetch("http://localhost:5000/mcqs")
+    //   .then((response) => response.json())
+    //   .then((data) => {
+    //     const quizContainer = document.getElementById("quiz");
+    //     data.forEach((mcq) => {
+    //       const questionDiv = document.createElement("div");
+    //       questionDiv.innerHTML = `
+    //         <h3>${mcq.question}</h3>
+    //         <ul>
+    //           <li>${mcq.option1}</li>
+    //           <li>${mcq.option2}</li>
+    //           <li>${mcq.option3}</li>
+    //           <li>${mcq.option4}</li>
+    //         </ul>
+    //         <p>Correct Answer: ${mcq.correct_answer}</p>
+    //         <p>Difficulty: ${mcq.difficulty}</p>
+    //         <p>Category: ${mcq.category}</p>
+    //       `;
+    //       quizContainer.appendChild(questionDiv);
+    //     });
+    //   })
+    //   .catch((error) => console.error("Error fetching data:", error)); -->
+    <!-- // </script> -->
+
+    <div class="grey d-flex">
+        <div class="box d-flex">
+            <h1>Quiz App</h1>
+            <p>Number of Questions:5</p>
+                <select name="" id="questions">5 
+                <option value="5" selected>5</option>
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="25">25</option>
+                <option value="30">30</option> 
+            </select>         
+            <p>Select Category:</p>
+            <select name="" id="category">Any Category 
+                <option value="22">Mythology</option>
+                <option value="11">Films</option>
+                <option value="24">Board Games</option>
+                <option value="25">Science</option>
+                <option value="23">History</option>
+                <option value="26">Politics</option>
+                <option value="27">Art</option>
+                <option value="28">Vehicles</option>
+                <option value="21">Sports</option>
+            </select>
+            <p>Select difficulty:</p>
+            <select name="" id="difficulty">Any Difficulty
+                <option value="Easy"  >Easy</option>
+                <option value="Medium">Medium</option>
+                <option value="Difficult">Difficult</option>
+            </select>
+            <p>Select time per question:</p>
+            <select name="" id="time">10 seconds
+                <option value="20">20 Seconds</option>
+                <option value="30">30 Seconds</option>
+                <option value="40">40 Seconds</option>
+                <option value="50">50 Seconds</option>
+                <option value="60">60 Seconds</option>
+            </select>
+            <button id="start-quiz" type="button">Start Quiz</button>
+        </div>
+        <div class="quiz-page d-flex">
+            <div id="outer">
+                <div id="inner">hello</div>
+              </div>
+            <div class="question left">Question </div>
+            <p class="left font-white" id="mcq">This is a Question</p>
+             
+            <div id="option1" class="d-flex left answer">
+                <button class="font-white" id="opt1" type="button">answer</button>
+            </div>
+            <div id="option2" class="d-flex left answer">
+                <button class="font-white" id="opt2" type="button">answer</button>                
+            </div><div id="option3" class="d-flex left answer">
+                <button class="font-white" id="opt3" type="button">answer</button>
+            </div><div id="option4" class="d-flex left answer">
+                <button class="font-white" id="opt4" type="button">answer</button>
+            </div>
+            <!-- options end  -->
+            <!-- <button id="next" type="button" class="font-white">Next</button> -->
+            <button id="submit" type="button" class="font-white">Submit</button>
+         </div>
+         <div class="score d-flex font-white">
+                <h1>Quiz App</h1>
+                <p>Your Score</p>
+                <span id="total-score"></span>
+                <button id="restart" class="font-white" type="button">Restart Quiz</button>
+                <button id="new-quiz" class="font-white" type="button">New Quiz</button>
+         </div>
+    </div>
+</body>
+</html>
