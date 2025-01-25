@@ -1,0 +1,12 @@
+.d-flex{
+    display:flex;
+}
+.left{
+    align-self:self-start;
+}
+.right{
+    align-self:self-end;
+}
+.font-white{
+    color:white;
+}
